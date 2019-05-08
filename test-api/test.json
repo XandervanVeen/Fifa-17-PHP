@@ -1,0 +1,17 @@
+{
+  "games": [
+    "overwatch",
+    "factorio",
+    "warframe"
+  ],
+  "boolean": true,
+  "color": "#82b92c",
+  "null": null,
+  "number": 123,
+  "object": {
+    "a": "b",
+    "c": "d",
+    "e": "f"
+  },
+  "name": "Kayle"
+}
