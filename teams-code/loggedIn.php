@@ -19,6 +19,10 @@ $user = $prepare->fetch(PDO::FETCH_ASSOC);
 echo 'Welcome: ' . $user['email'];
 echo '<br>';
 $id = $user['id'];
+// Retrieve schedule
+$sql = "SELECT * FROM schedule";
+$query = $db->query($sql);
+$schedule = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!doctype html>
 <html lang="en">
@@ -33,15 +37,22 @@ $id = $user['id'];
     <a href="logout.php">Logout</a>
     <br>
     <a href="team-overview.php">All teams</a>
-    <form action="addTeam.php" method="post">
-        <input type="hidden" name="type" value="add">
-        <input type="hidden" name="id" value="<?=$id?>">
-        <input type="submit" value="Create new team">
-    </form>
     <?php
+    if (!empty($schedule)){
+        echo "<br><a href='schedule-overview.php'>Schedule</a>";
+    }
     if ($user['admin'] == 1){
-        echo '<h2>Welcome! you have logged in as an admin!</h2>';
-        echo '<p>Admin controls:</p>';
+        if (empty($schedule)){
+            echo "<br><a href='preSchedule.php'>Create schedule</a>";
+            echo "<br><a href='addField.php'>Fields</a>";
+        }
+    }
+    if (empty($schedule) && $user['teamid'] == 0){
+        echo "<form action='addTeam.php' method='post'>
+        <input type='hidden' name='type' value='add'>
+        <input type='hidden' name='id' value='<?=$id?>'>
+        <input type='submit' value='Create new team'>
+        </form>";
     }
     ?>
 </body>

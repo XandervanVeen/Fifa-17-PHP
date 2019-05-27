@@ -1,6 +1,29 @@
 <?php
+require 'config.php';
 require 'style.php';
-$id = $_POST['id'];
+session_start();
+$id = $_SESSION['id'];
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    // Retrieve schedule
+    $sql = "SELECT * FROM schedule";
+    $query = $db->query($sql);
+    $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
+    if (!empty($schedule)){
+        header('Location: index.php');
+    }
+    $sql = "SELECT * FROM users WHERE id = :id";
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':id' => $_SESSION['id']
+    ]);
+    $user = $prepare->fetch(PDO::FETCH_ASSOC);
+    if ($user['teamid'] != 0){
+        header('Location: index.php');
+    }
+}
+else {
+    header('Location: index.php');
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,9 +41,7 @@ $id = $_POST['id'];
         <input type="hidden" name="id" value="<?=$id?>">
         <label for="name">Team name</label>
         <input type="text" id="name" name="name" placeholder="Team name"><br>
-        <p>Schrijf de spelers in het team op zoals: Dirk,Jan,Michiel etc</p>
-        <label for="players">Players</label>
-        <input type="text" id="players" name="players" placeholder="Dirk,Jan,Michiel etc"><br>
+        <p>Spelers kunnen toegevoegd worden als het team eenmaal is aangemaakt!</p>
         <br>
         <input type="submit" value="Add team">
     </form>

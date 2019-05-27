@@ -5,6 +5,9 @@ session_start();
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header('Location: loggedIn.php');
 }
+$sql = "SELECT * FROM schedule";
+$query = $db->query($sql);
+$schedule = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,5 +25,10 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <a href="register.php">Register</a>
     <br>
     <a href="team-overview.php">All teams</a>
+    <?php
+    if (!empty($schedule)){
+        echo "<br><a href='schedule-overview.php'>Schedule</a>";
+    }
+    ?>
 </body>
 </html>

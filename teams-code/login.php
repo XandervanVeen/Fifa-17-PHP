@@ -19,9 +19,9 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     <form action="loginController.php" method="post">
         <input type="hidden" name="type" value="login">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="email@gmail.com"><br>
+        <input type="email" id="email" name="email" required placeholder="email@gmail.com"><br>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Password"><br>
+        <input type="password" id="password" name="password" required placeholder="Password"><br>
         <br>
         <input type="submit" value="Login">
     </form>

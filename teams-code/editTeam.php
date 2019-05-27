@@ -3,13 +3,29 @@ require 'config.php';
 require 'style.php';
 session_start();
 
+// Retrieve all users
+$sql = "SELECT * FROM users";
+$query = $db->query($sql);
+$users = $query->fetchAll(PDO::FETCH_ASSOC);
+$countUsers = count($users);
+
 // Retrieve current session user
 $sql = "SELECT * FROM users WHERE id = :id";
 $prepare = $db->prepare($sql);
 $prepare->execute([
-    ':id' => $_SESSION['id']
+    ':id' => htmlentities($_SESSION['id'])
 ]);
 $user = $prepare->fetch(PDO::FETCH_ASSOC);
+
+// Retrieve all schedule
+$sql = "SELECT * FROM schedule";
+$query = $db->query($sql);
+$schedule = $query->fetchAll(PDO::FETCH_ASSOC);
+
+if (!empty($schedule)){
+    header('Location: index.php');
+    exit;
+}
 
 // Retrieve team where creator is current user
 $sql = "SELECT * FROM teams WHERE id = :id";
@@ -19,6 +35,11 @@ $prepare->execute([
 ]);
 $team = $prepare->fetch(PDO::FETCH_ASSOC);
 
+if (empty($team)){
+    header('Location: index.php');
+    exit;
+}
+
 $currentTeamCreator = $team['creator'];
 if ($user['admin'] == 1) {
     echo "<h1>Edit team: {$team['name']}</h1>";
@@ -27,10 +48,6 @@ if ($user['admin'] == 1) {
     echo "<input type='hidden' name='id' value='{$team['id']}'>";
     echo "<label for='name'>Team name</label>";
     echo "<input type='text' id='name' name='name' value='{$team['name']}'><br>";
-    echo "<label for='players'>Players</label>";
-    echo "<input type='text' id='players' name='players' value='{$team['players']}'><br>";
-    echo "<p>Schrijf de spelers in het team op zoals: Dirk,Jan,Michiel etc</p>";
-    echo "<br>";
     echo "<input type='submit' value='Edit team'>";
     echo "</form>";
     echo "<form action='teamController.php' method='post'>";
@@ -38,6 +55,31 @@ if ($user['admin'] == 1) {
     echo "<input type='hidden' name='id' value='{$team['id']}'>";
     echo "<input type='submit' value='delete'>";
     echo "</form>";
+    echo "<br>";
+    $players = "";
+    $allPlayersCurrentTeam = explode(",", $team['players']);
+    $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
+    for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
+        $currentUser = $allPlayersCurrentTeam[$x];
+        foreach ($users as $key => $val) {
+            if ($val['id'] == $currentUser) {
+                $players = $players . $val['username'] . ", ";
+            }
+        }
+    }
+    echo "<p>Players: {$players}</p><br>";
+    for ($i = 0; $i < $countUsers; $i++){
+        $currentUser = $users[$i];
+        if ($currentUser['teamid'] == 0 && $currentUser['admin'] == 0) {
+            echo "<form action='teamController.php' method='post'>";
+            echo "<input type='hidden' name='type' value='addPlayer'>";
+            echo "<input type='hidden' name='teamID' value='{$team['id']}'>";
+            echo "<input type='hidden' name='playerID' value='{$currentUser['id']}'>";
+            echo "<input type='submit' value='Add Player: {$currentUser['username']}'>";
+            echo "</form>";
+        }
+    }
+    echo "<br>";
 }
 else {
     if ($currentTeamCreator == $user['id'])
@@ -48,12 +90,34 @@ else {
         echo "<input type='hidden' name='id' value='{$team['id']}'>";
         echo "<label for='name'>Team name</label>";
         echo "<input type='text' id='name' name='name' value='{$team['name']}'><br>";
-        echo "<label for='players'>Players</label>";
-        echo "<input type='text' id='players' name='players' value='{$team['players']}'><br>";
-        echo "<p>Schrijf de spelers in het team op zoals: Dirk,Jan,Michiel etc</p>";
         echo "<br>";
         echo "<input type='submit' value='Edit team'>";
         echo "</form>";
+        echo "<br>";
+        $players = "";
+        $allPlayersCurrentTeam = explode(",", $team['players']);
+        $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
+        for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
+            $currentUser = $allPlayersCurrentTeam[$x];
+            foreach ($users as $key => $val) {
+                if ($val['id'] == $currentUser) {
+                    $players = $players . $val['username'] . ", ";
+                }
+            }
+        }
+        echo "<p>Players: {$players}</p><br>";
+        for ($i = 0; $i < $countUsers; $i++){
+            $currentUser = $users[$i];
+            if ($currentUser['teamid'] == 0 && $currentUser['admin'] == 0) {
+                echo "<form action='teamController.php' method='post'>";
+                echo "<input type='hidden' name='type' value='addPlayer'>";
+                echo "<input type='hidden' name='teamID' value='{$team['id']}'>";
+                echo "<input type='hidden' name='playerID' value='{$currentUser['id']}'>";
+                echo "<input type='submit' value='Add Player: {$currentUser['username']}'>";
+                echo "</form>";
+            }
+        }
+        echo "<br>";
     }
     else
     {
