@@ -6,6 +6,22 @@ if ( $_SERVER['REQUEST_METHOD'] != 'POST' ) {
     header('Location: index.php');
     exit;
 };
+$sql = "SELECT * FROM referee";
+$query = $db->query($sql);
+$referees = $query->fetchAll(PDO::FETCH_ASSOC);
+$refereeCount = count($referees);
+if ($refereeCount == 0){
+    echo "<p>Er is nog geen scheidsrechter toegevoegd!</p>";
+    echo "<br><a href='addReferee.php'>Scheidsrechter toevoegen</a>";
+    exit;
+}
+else {
+    $refereeCount = count($referees);
+    for ($i = 0; $i < $refereeCount; $i++){
+        $allReferees[$i] = $referees[$i]['id'];
+    }
+    sort($allReferees);
+}
 $sql = "SELECT * FROM teams";
 $query = $db->query($sql);
 $teams = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -89,16 +105,23 @@ if ($_POST['type'] === 'generate'){
         }
     }
     $shedule1Count = count($shedule1);
-    for ($i = 0, $x = -1; $i < $shedule1Count; $i++){
+    for ($i = 0, $x = -1, $c = -1; $i < $shedule1Count; $i++){
         if ($fieldsCount - 1 <= $x) {
             $x = 0;
         }
         else {
             $x++;
         }
+        if ($refereeCount - 1 <= $c) {
+            $c = 0;
+        }
+        else {
+            $c++;
+        }
+        $currentReferee = $allReferees[$c];
         $currentField = $allFields[$x];
-        $sql = "INSERT INTO schedule (team1, team2, matchtime, breaktime, resttime, field, team1score, team2score)
-        VALUES ( :team1, :team2, :matchtime, :breaktime, :resttime, :field, :team1score, :team2score)";
+        $sql = "INSERT INTO schedule (team1, team2, matchtime, breaktime, resttime, field, referee, team1score, team2score)
+        VALUES ( :team1, :team2, :matchtime, :breaktime, :resttime, :field, :referee, :team1score, :team2score)";
         $prepare = $db->prepare($sql);
         $prepare->execute([
             ':team1'      => $shedule1[$i],
@@ -107,6 +130,7 @@ if ($_POST['type'] === 'generate'){
             ':breaktime'  => $breakTime,
             ':resttime'   => $restTime,
             ':field'      => $currentField,
+            ':referee'    => $currentReferee,
             ':team1score' => 0,
             ':team2score' => 0
         ]);

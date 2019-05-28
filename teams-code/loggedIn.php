@@ -45,6 +45,7 @@ $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
         if (empty($schedule)){
             echo "<br><a href='preSchedule.php'>Create schedule</a>";
             echo "<br><a href='addField.php'>Fields</a>";
+            echo "<br><a href='addReferee.php'>Referee</a>";
         }
     }
     if (empty($schedule) && $user['teamid'] == 0){

@@ -16,6 +16,9 @@ $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
 $sql = "SELECT * FROM teams";
 $query = $db->query($sql);
 $teams = $query->fetchAll(PDO::FETCH_ASSOC);
+$sql = "SELECT * FROM referee";
+$query = $db->query($sql);
+$referees = $query->fetchAll(PDO::FETCH_ASSOC);
 if (empty($schedule)){
     Header('Location: index.php');
     exit;
@@ -46,6 +49,7 @@ if (empty($schedule)){
         <th style="width: 100px;">Pauze duur</th>
         <th style="width: 100px;">Rust duur</th>
         <th style="width: 50px;">Veld</th>
+        <th style="width: 50px;">Referee</th>
         <th style="width: 100px;">Team 1 score</th>
         <th style="width: 100px;">Team 2 score</th>
         <?php
@@ -81,6 +85,12 @@ if (empty($schedule)){
                 echo "<th>{$schedule[$i]['resttime']}</th>";
             }
             echo "<th>{$schedule[$i]['field']}</th>";
+            foreach ($referees as $key => $val) {
+                if ($val['id'] == $schedule[$i]['referee']) {
+                    $currentReferee = $val;
+                }
+            }
+            echo "<th>{$currentReferee['name']}</th>";
             echo "<th>{$schedule[$i]['team1score']}</th>";
             echo "<th>{$schedule[$i]['team2score']}</th>";
             if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){

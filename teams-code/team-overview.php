@@ -12,7 +12,7 @@ $sql = "SELECT * FROM users";
 $query = $db->query($sql);
 $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
-// Retrieve all schedule
+// Retrieve all from schedule
 $sql = "SELECT * FROM schedule";
 $query = $db->query($sql);
 $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
