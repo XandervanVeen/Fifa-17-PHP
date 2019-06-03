@@ -167,6 +167,87 @@ if ($_POST['type'] === 'scoreInput'){
         ':team2score'  => $team2score,
         ':id'          => $id
     ]);
+
+    $sql = "SELECT * FROM schedule WHERE id = :id";
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':id' => $id
+    ]);
+    $match = $prepare->fetch(PDO::FETCH_ASSOC);
+
+    $sql = "SELECT * FROM teams WHERE id = :id";
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':id' => $match['team1']
+    ]);
+    $team1 = $prepare->fetch(PDO::FETCH_ASSOC);
+
+    $sql = "SELECT * FROM teams WHERE id = :id";
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':id' => $match['team2']
+    ]);
+    $team2 = $prepare->fetch(PDO::FETCH_ASSOC);
+
+
+    $hasBeenEdited = 1;
+    $sql = "UPDATE schedule SET 
+        hasBeenEdited   = :hasBeenEdited
+        WHERE id = :id";
+    $prepare= $db->prepare($sql);
+    $prepare->execute([
+        ':hasBeenEdited'  => $hasBeenEdited,
+        ':id'          => $id
+    ]);
+
+    if ($team1score > $team2score ){
+        $id = $match['team1'];
+        $points = $team1['points'] + 3;
+        $sql = "UPDATE teams SET 
+        points   = :points
+        WHERE id = :id";
+        $prepare= $db->prepare($sql);
+        $prepare->execute([
+            ':points'       => $points,
+            ':id'          => $id
+        ]);
+    }
+
+    if ($team1score < $team2score ){
+        $id = $match['team2'];
+        $points = $team2['points'] + 3;
+        $sql = "UPDATE teams SET 
+        points   = :points
+        WHERE id = :id";
+        $prepare= $db->prepare($sql);
+        $prepare->execute([
+            ':points'       => $points,
+            ':id'          => $id
+        ]);
+    }
+    if ($team1score == $team2score ){
+        $points1 = $team1['points'] + 1;
+        $id1 = $match['team1'];
+        $sql = "UPDATE teams SET 
+        points   = :points
+        WHERE id = :id";
+        $prepare= $db->prepare($sql);
+        $prepare->execute([
+            ':points'       => $points1,
+            ':id'           => $id1
+        ]);
+
+        $points2 = $team2['points'] + 1;
+        $id2 = $match['team2'];
+        $sql = "UPDATE teams SET 
+        points   = :points
+        WHERE id = :id";
+        $prepare= $db->prepare($sql);
+        $prepare->execute([
+            ':points'       => $points2,
+            ':id'           => $id2
+        ]);
+    }
     header('Location: schedule-overview.php');
 }
 if ($_POST['type'] === 'delete'){
@@ -174,6 +255,14 @@ if ($_POST['type'] === 'delete'){
     $query = $db->query($sql);
     $sql = "TRUNCATE schedule";
     $query = $db->query($sql);
+
+    $points = 0;
+    $sql = "UPDATE teams SET 
+        points   = :points";
+    $prepare= $db->prepare($sql);
+    $prepare->execute([
+        ':points'       => $points
+    ]);
     header('Location: schedule-overview.php');
 }
 ?>
