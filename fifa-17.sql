@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 28 mei 2019 om 08:56
--- Serverversie: 10.1.37-MariaDB
--- PHP-versie: 7.3.1
+-- Gegenereerd op: 03 jun 2019 om 19:53
+-- Serverversie: 10.1.38-MariaDB
+-- PHP-versie: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -54,6 +54,16 @@ CREATE TABLE `referee` (
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Gegevens worden geëxporteerd voor tabel `referee`
+--
+
+INSERT INTO `referee` (`id`, `name`) VALUES
+(5, 'Xander van Veen'),
+(8, 'Raf Schapendonk'),
+(9, 'Eyob van Arem'),
+(11, 'Duncan Dulos');
+
 -- --------------------------------------------------------
 
 --
@@ -72,18 +82,6 @@ CREATE TABLE `schedule` (
   `team1score` tinyint(6) NOT NULL,
   `team2score` tinyint(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `schedule`
---
-
-INSERT INTO `schedule` (`id`, `team1`, `team2`, `matchtime`, `breaktime`, `resttime`, `field`, `referee`, `team1score`, `team2score`) VALUES
-(1, 35, 36, 20, 15, 5, 1, '', 0, 0),
-(2, 35, 37, 20, 15, 5, 2, '', 0, 0),
-(3, 35, 38, 20, 15, 5, 3, '', 0, 0),
-(4, 36, 37, 20, 15, 5, 4, '', 0, 0),
-(5, 36, 38, 20, 15, 5, 1, '', 0, 0),
-(6, 37, 38, 20, 15, 5, 2, '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -107,7 +105,7 @@ INSERT INTO `teams` (`id`, `name`, `players`, `creator`, `points`) VALUES
 (35, 'Dragons', '24,32,31,30,36,37,38,39', 24, 0),
 (36, 'Serpents', '25,28,40', 25, 0),
 (37, 'Vikings', '26,29,43', 26, 0),
-(38, 'Ravens', '27,33,34,35', 27, 0);
+(38, 'Ravens', '27,33,34', 27, 0);
 
 -- --------------------------------------------------------
 
@@ -141,7 +139,6 @@ INSERT INTO `users` (`id`, `email`, `password`, `username`, `teamid`, `admin`) V
 (32, 'testing@gmail.com', '$2y$10$1mFPNfAcxsaIDFmAG4eKy.i36jB0lMmO873KUJoxEdur3OVol9bMa', 'Testing', 35, 0),
 (33, 'bartje@gmail.com', '$2y$10$A6SFib3aVJFgDF1UHGxBYexJUIoePbyXBk27q9tkXlg0Bf1t28QFW', 'Bartje', 38, 0),
 (34, 'anderegebruiker@gmail.com', '$2y$10$/K/mwHdMi/JJeAIOckVVaOXV2mcRFQmRfqnBsJIHaKuImc3XubNPS', 'Janee', 38, 0),
-(35, 'nogiemand@gmail.com', '$2y$10$NnzDxiYAqsL.lNlXBk9zjuPI0JC89V5SHRA64IsKD79CpiHUKN2Yy', 'Tantoe', 38, 0),
 (36, 'test1@gmail.com', '$2y$10$K11uCelNazc4wYouimGHCOeurNrFak5N69WPel30ca4gzDW6bUJOm', 'test1', 35, 0),
 (37, 'gaming@gmail.com', '$2y$10$hmRrxvCBzAQczDCdClhBW.pE6B77o7dK47KOx5CgvXtMyk0RNNHne', 'Gaming', 35, 0),
 (38, 'gaming1@gmail.com', '$2y$10$m24SDdwmgheNG8.R8Xauo.Y1RVpUW4rT5g0zR39fADGiuE4ppc0hW', 'Gaming1', 35, 0),
@@ -193,19 +190,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT voor een tabel `fields`
 --
 ALTER TABLE `fields`
-  MODIFY `id` tinyint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` tinyint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT voor een tabel `referee`
 --
 ALTER TABLE `referee`
-  MODIFY `id` tinyint(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` tinyint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT voor een tabel `schedule`
 --
 ALTER TABLE `schedule`
-  MODIFY `id` tinyint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` tinyint(6) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT voor een tabel `teams`
@@ -217,7 +214,7 @@ ALTER TABLE `teams`
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

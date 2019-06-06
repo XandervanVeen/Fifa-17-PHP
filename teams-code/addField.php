@@ -41,48 +41,79 @@ if (!empty($allFields)) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add field</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Veld toevoegen</title>
 </head>
-<style>
-    .fields tr th {
-        border: black 1px solid;
-        padding: 5px;
-    }
-</style>
 <body>
-    <a href="index.php">Go back</a>
-    <h1>Add field</h1>
-    <form action="fieldController.php" method="post">
-        <input type="hidden" name="type" value="add">
-        <label for="fieldNumber">Field number</label>
-        <input type="text" id="fieldNumber" name="fieldNumber" placeholder="Field number: 0, 1, 2"><br>
-        <br>
-        <input type="submit" value="Add field">
-    </form>
-    <h2>All fields:</h2>
-    <table class="fields">
-        <tr>
-            <th style="width: 200px;">Field number</th>
-            <th style="width: 200px;">Delete field</th>
-        </tr>
+    <div class="home-header">
+        <a class="home-logo" href="index.php">
+            <h1>FIFA 17</h1>
+            <img src="img/football.jpg" alt="logo-img">
+        </a>
+        <nav>
+            <a class="return-button" href="index.php"><img src="img/house.png" alt="house-img"><p>Ga terug</p></a>
             <?php
-                for ($i = 0; $i < $fieldsCount; $i++){
-                    echo "<tr><th>{$allFields[$i]}</th>";
-                    echo "<th>";
-                        echo "<form action='fieldController.php' method='post'>";
-                        echo "<input type='hidden' name='type' value='delete'>";
-                        foreach ($fields as $key => $val) {
-                            if ($val['fieldNumber'] == $allFields[$i]) {
-                                $currentField = $val;
-                            }
-                        }
-                        echo "<input type='hidden' name='id' value='{$currentField['id']}'>";
-                        echo "<input type='submit' value='delete'>";
-                        echo "</form>";
-                    echo "</th>";
-                    echo "</tr>";
-                }
+            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                echo "<a href='logout.php'>Uitloggen</a>";
+            }
+            else {
+                echo "<a href='login.php'>Login</a>";
+                echo "<a href='register.php'>Registreer</a>";
+            }
             ?>
-    </table>
+        </nav>
+    </div>
+    <div class="home-main-f">
+        <div class="center">
+            <div class="field-content">
+                <h2>Veld toevoegen</h2>
+                <form action="fieldController.php" method="post">
+                    <input type="hidden" name="type" value="add">
+                    <input class="l-type-text" type="text" id="fieldNumber" name="fieldNumber" placeholder="Veld nummer">
+                    <input class="form-button" type="submit" value="Veld toevoegen">
+                </form>
+                <h2>Alle velden:</h2>
+                <table class="fields">
+                    <tr>
+                        <th style="width: 200px;">Veld nummer</th>
+                        <th style="width: 200px;">Verwijderen</th>
+                    </tr>
+                        <?php
+                        $oddOrEven = 0;
+                            for ($i = 0; $i < $fieldsCount; $i++){
+                                if($oddOrEven % 2 == 0){
+                                    // Even
+                                    echo '<tr class="even-tr">';
+                                }
+                                else {
+                                    // Odd
+                                    echo '<tr class="odd-tr">';
+                                }
+                                $oddOrEven++;
+                                echo "<th>{$allFields[$i]}</th>";
+                                echo "<th>";
+                                    echo "<form action='fieldController.php' method='post'>";
+                                    echo "<input type='hidden' name='type' value='delete'>";
+                                    foreach ($fields as $key => $val) {
+                                        if ($val['fieldNumber'] == $allFields[$i]) {
+                                            $currentField = $val;
+                                        }
+                                    }
+                                    echo "<input type='hidden' name='id' value='{$currentField['id']}'>";
+                                    echo "<input type='submit' value='Verwijder veld'>";
+                                    echo "</form>";
+                                echo "</th>";
+                                echo "</tr>";
+                            }
+                        ?>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="home-footer">
+        <p>Telefoon: 0645871236</p>
+        <p>Adres: Terheijdenseweg 350, 4826 AA Breda</p>
+        <p>Email: radiuscollege@rocwb.nl</p>
+    </div>
 </body>
 </html>

@@ -22,7 +22,7 @@ if ($_POST['type'] === 'add'){
     // This looks true all referees to see if it can find and item in the database
     // which already contains the referee name
     foreach ($referees as $key => $val) {
-        if ($val['name'] == strtolower($refereeName)) {
+        if (strtolower($val['name']) == strtolower($refereeName)) {
             echo "<p>That name is already in use!</p>";
             echo "<br><a href='addReferee.php'>Retry</a>";
             exit;

@@ -32,18 +32,45 @@ else {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add team</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Team aanmaken</title>
 </head>
 <body>
-    <h1>Add team</h1>
-    <form action="teamController.php" method="post">
-        <input type="hidden" name="type" value="add">
-        <input type="hidden" name="id" value="<?=$id?>">
-        <label for="name">Team name</label>
-        <input type="text" id="name" name="name" placeholder="Team name"><br>
-        <p>Spelers kunnen toegevoegd worden als het team eenmaal is aangemaakt!</p>
-        <br>
-        <input type="submit" value="Add team">
-    </form>
+    <div class="home-header">
+        <a class="home-logo" href="index.php">
+            <h1>FIFA 17</h1>
+            <img src="img/football.jpg" alt="logo-img">
+        </a>
+        <nav>
+            <?php
+            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                echo "<a href='logout.php'>Uitloggen</a>";
+            }
+            else {
+                echo "<a href='login.php'>Login</a>";
+                echo "<a href='register.php'>Registreer</a>";
+            }
+            ?>
+        </nav>
+    </div>
+    <div class="home-main">
+        <div class="center">
+            <div class="team-content">
+                <h2>Team aanmaken</h2>
+                <form action="teamController.php" method="post">
+                    <input type="hidden" name="type" value="add">
+                    <input type="hidden" name="id" value="<?=$id?>">
+                    <input class="l-type-text-last" type="text" id="name" name="name" placeholder="Team naam">
+                    <input class="form-button" type="submit" value="Team toevoegen">
+                </form>
+                <p>Spelers kunnen toegevoegd worden als het team eenmaal is aangemaakt!</p>
+            </div>
+        </div>
+    </div>
+    <div class="home-footer">
+        <p>Telefoon: 0645871236</p>
+        <p>Adres: Terheijdenseweg 350, 4826 AA Breda</p>
+        <p>Email: radiuscollege@rocwb.nl</p>
+    </div>
 </body>
 </html>

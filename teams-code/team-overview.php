@@ -39,73 +39,105 @@ else {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>All teams</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Alle teams</title>
 </head>
-<style>
-    .teams tr th {
-        border: black 1px solid;
-        padding: 10px;
-    }
-</style>
 <body>
-    <h2>All teams:</h2>
-    <table class="teams">
-        <tr>
-            <th style="width: 200px;">Team name</th>
-            <th style="width: 200px;">Players</th>
-            <th style="width: 200px;">Creator</th>
+    <div class="home-header">
+        <a class="home-logo" href="index.php">
+            <h1>FIFA 17</h1>
+            <img src="img/football.jpg" alt="logo-img">
+        </a>
+        <nav>
+            <a class="return-button" href="index.php"><img src="img/house.png" alt="house-img"><p>Ga terug</p></a>
             <?php
-                if ($id != null && $user['teamid'] == 0){
-                    echo "<th style='width: 200px;'>Participate</th>";
-                }
-            ?>
-        </tr>
-        <?php
-        $totalTeams = count($teams);
-        for ($i = 0; $i < $totalTeams; $i++){
-            $currentTeam = $teams[$i];
-            $creator = $currentTeam['creator'];
-            foreach ($users as $key => $val) {
-                if ($val['id'] == $creator) {
-                    $creatorDetail = $val;
-                }
-            }
-            echo '<tr>';
-            if ($id == $creator || $user['admin'] == 1) {
-                if (empty($schedule)) {
-                    echo "<th style='font-weight: lighter;'><a href='editTeam.php?id={$teams[$i]['id']}'>" . $teams[$i]['name'] . "</a></th>";
-                }
-                else {
-                    echo "<th style='font-weight: lighter;'>" . $currentTeam['name'] . "</th>";
-                }
+            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                echo "<a href='logout.php'>Uitloggen</a>";
             }
             else {
-                echo "<th style='font-weight: lighter;'>" . $currentTeam['name'] . "</th>";
+                echo "<a href='login.php'>Login</a>";
+                echo "<a href='register.php'>Registreer</a>";
             }
-            $players = "";
-            $allPlayersCurrentTeam = explode(",", $currentTeam['players']);
-            $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
-            for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
-                $currentUser = $allPlayersCurrentTeam[$x];
-                foreach ($users as $key => $val) {
-                    if ($val['id'] == $currentUser) {
-                        $players = $players . $val['username'] . ", ";
+            ?>
+        </nav>
+    </div>
+    <div class="home-main-t">
+        <div class="center">
+            <div class="home-content-t">
+                <h2>Alle teams:</h2>
+                <table class="teams">
+                    <tr class="even-tr">
+                        <th style="width: 200px;">Team naam</th>
+                        <th style="width: 200px;">Spelers</th>
+                        <th style="width: 200px;">Maker</th>
+                        <?php
+                            if ($id != null && $user['teamid'] == 0 && $user['admin'] == 0){
+                                echo "<th style='width: 200px;'>Deelnemen</th>";
+                            }
+                        ?>
+                    </tr>
+                    <?php
+                    $totalTeams = count($teams);
+                    $oddOrEven = 1;
+                    for ($i = 0; $i < $totalTeams; $i++){
+                        $currentTeam = $teams[$i];
+                        $creator = $currentTeam['creator'];
+                        foreach ($users as $key => $val) {
+                            if ($val['id'] == $creator) {
+                                $creatorDetail = $val;
+                            }
+                        }
+                        if($oddOrEven % 2 == 0){
+                            // Even
+                            echo '<tr class="even-tr">';
+                        }
+                        else {
+                            // Odd
+                            echo '<tr class="odd-tr">';
+                        }
+                        $oddOrEven++;
+                        if ($id == $creator || $user['admin'] == 1) {
+                            if (empty($schedule)) {
+                                echo "<th style='font-weight: lighter;'><a href='editTeam.php?id={$teams[$i]['id']}'>" . $teams[$i]['name'] . "</a></th>";
+                            }
+                            else {
+                                echo "<th style='font-weight: lighter;'>" . $currentTeam['name'] . "</th>";
+                            }
+                        }
+                        else {
+                            echo "<th style='font-weight: lighter;'>" . $currentTeam['name'] . "</th>";
+                        }
+                        $players = "";
+                        $allPlayersCurrentTeam = explode(",", $currentTeam['players']);
+                        $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
+                        for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
+                            $currentUser = $allPlayersCurrentTeam[$x];
+                            foreach ($users as $key => $val) {
+                                if ($val['id'] == $currentUser) {
+                                    $players = $players . $val['username'] . ", ";
+                                }
+                            }
+                        }
+                        echo '<th style="font-weight: lighter;">' . $players . '</th>';
+                        echo '<th style="font-weight: lighter;">' . $creatorDetail['username'] . '</th>';
+                        if ($id != null && $user['teamid'] == 0 && $user['admin'] == 0){
+                            echo "<th><form action='teamController.php' method='post'>";
+                            echo "<input type='hidden' name='type' value='addPlayerSolo'>";
+                            echo "<input type='hidden' name='id' value='{$currentTeam['id']}'>";
+                            echo "<input type='submit' value='Deelnemen in team'>";
+                            echo "</form></th>";
+                        }
+                        echo '</tr>';
                     }
-                }
-            }
-            echo '<th style="font-weight: lighter;">' . $players . '</th>';
-            echo '<th style="font-weight: lighter;">' . $creatorDetail['username'] . '</th>';
-            if ($id != null && $user['teamid'] == 0){
-                echo "<th><form action='teamController.php' method='post'>";
-                echo "<input type='hidden' name='type' value='addPlayerSolo'>";
-                echo "<input type='hidden' name='id' value='{$currentTeam['id']}'>";
-                echo "<input type='submit' value='Participate in team'>";
-                echo "</form></th>";
-            }
-            echo '</tr>';
-        }
-        ?>
-    </table>
-    <a href="index.php">Go back</a>
+                    ?>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="home-footer">
+        <p>Telefoon: 0645871236</p>
+        <p>Adres: Terheijdenseweg 350, 4826 AA Breda</p>
+        <p>Email: radiuscollege@rocwb.nl</p>
+    </div>
 </body>
 </html>

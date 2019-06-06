@@ -30,21 +30,48 @@ if (!empty($schedule)) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>preShedule</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Schema creëren</title>
 </head>
 <body>
-    <form action="scheduleController.php" method="post">
-        <input type="hidden" name="type" value="generate">
-        <label for="matchTime">Hoe lang gaat elke wedstrijd duren?</label>
-        <input type="text" id="matchTime" name="matchTime" required placeholder="Schrijf op in minuten"><br>
-        <label for="breakTime">Hoe lang gaat de pauze tussen elke wedstrijd duren?</label>
-        <input type="text" id="breakTime" name="breakTime" required placeholder="Schrijf op in minuten"><br>
-        <label for="">Komt er rust tijd middenin de wedstrijd?</label>
-        <input type="checkbox" id="restTimeCheck" name="restTimeCheck" style="float: left; margin-top: 5px;>">
-        <label for="restTime">Zo ja, hoelang duurt de rust tijd dan?</label>
-        <input type="text" id="restTime" name="restTime" placeholder="Schrijf op in minuten"><br>
-        <br>
-        <input type="submit" value="Genereer wedstrijd">
-    </form>
+    <div class="home-header">
+        <a class="home-logo" href="index.php">
+            <h1>FIFA 17</h1>
+            <img src="img/football.jpg" alt="logo-img">
+        </a>
+        <nav>
+            <a class="return-button" href="index.php"><img src="img/house.png" alt="house-img"><p>Ga terug</p></a>
+            <?php
+            if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                echo "<a href='logout.php'>Uitloggen</a>";
+            }
+            else {
+                echo "<a href='login.php'>Login</a>";
+                echo "<a href='register.php'>Registreer</a>";
+            }
+            ?>
+        </nav>
+    </div>
+    <div class="home-main">
+        <div class="center">
+            <div class="pschedule-content">
+                <h2>Schema creëren</h2>
+                <p>Alles word in minuten omgezet!</p>
+                <form action="scheduleController.php" method="post">
+                    <input type="hidden" name="type" value="generate">
+                        <input class="l-type-text" type="text" id="matchTime" name="matchTime" required placeholder="Wedstrijd duur">
+                        <input class="l-type-text" type="text" id="breakTime" name="breakTime" required placeholder="Pauze duur">
+                        <input class="l-type-text" type="text" id="restTime" name="restTime" placeholder="Rust duur (niet verplicht)">
+                        <input class="form-button" type="submit" value="Genereer wedstrijd">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="home-footer">
+        <p>Telefoon: 0645871236</p>
+        <p>Adres: Terheijdenseweg 350, 4826 AA Breda</p>
+        <p>Email: radiuscollege@rocwb.nl</p>
+    </div>
 </body>
 </html>

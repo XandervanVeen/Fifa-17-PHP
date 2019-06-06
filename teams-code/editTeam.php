@@ -41,90 +41,6 @@ if (empty($team)){
 }
 
 $currentTeamCreator = $team['creator'];
-if ($user['admin'] == 1) {
-    echo "<h1>Edit team: {$team['name']}</h1>";
-    echo "<form action='teamController.php' method='post'>";
-    echo "<input type='hidden' name='type' value='edit'>";
-    echo "<input type='hidden' name='id' value='{$team['id']}'>";
-    echo "<label for='name'>Team name</label>";
-    echo "<input type='text' id='name' name='name' value='{$team['name']}'><br>";
-    echo "<input type='submit' value='Edit team'>";
-    echo "</form>";
-    echo "<form action='teamController.php' method='post'>";
-    echo "<input type='hidden' name='type' value='delete'>";
-    echo "<input type='hidden' name='id' value='{$team['id']}'>";
-    echo "<input type='submit' value='delete'>";
-    echo "</form>";
-    echo "<br>";
-    $players = "";
-    $allPlayersCurrentTeam = explode(",", $team['players']);
-    $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
-    for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
-        $currentUser = $allPlayersCurrentTeam[$x];
-        foreach ($users as $key => $val) {
-            if ($val['id'] == $currentUser) {
-                $players = $players . $val['username'] . ", ";
-            }
-        }
-    }
-    echo "<p>Players: {$players}</p><br>";
-    for ($i = 0; $i < $countUsers; $i++){
-        $currentUser = $users[$i];
-        if ($currentUser['teamid'] == 0 && $currentUser['admin'] == 0) {
-            echo "<form action='teamController.php' method='post'>";
-            echo "<input type='hidden' name='type' value='addPlayer'>";
-            echo "<input type='hidden' name='teamID' value='{$team['id']}'>";
-            echo "<input type='hidden' name='playerID' value='{$currentUser['id']}'>";
-            echo "<input type='submit' value='Add Player: {$currentUser['username']}'>";
-            echo "</form>";
-        }
-    }
-    echo "<br>";
-}
-else {
-    if ($currentTeamCreator == $user['id'])
-    {
-        echo "<h1>Edit team: {$team['name']}</h1>";
-        echo "<form action='teamController.php' method='post'>";
-        echo "<input type='hidden' name='type' value='edit'>";
-        echo "<input type='hidden' name='id' value='{$team['id']}'>";
-        echo "<label for='name'>Team name</label>";
-        echo "<input type='text' id='name' name='name' value='{$team['name']}'><br>";
-        echo "<br>";
-        echo "<input type='submit' value='Edit team'>";
-        echo "</form>";
-        echo "<br>";
-        $players = "";
-        $allPlayersCurrentTeam = explode(",", $team['players']);
-        $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
-        for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
-            $currentUser = $allPlayersCurrentTeam[$x];
-            foreach ($users as $key => $val) {
-                if ($val['id'] == $currentUser) {
-                    $players = $players . $val['username'] . ", ";
-                }
-            }
-        }
-        echo "<p>Players: {$players}</p><br>";
-        for ($i = 0; $i < $countUsers; $i++){
-            $currentUser = $users[$i];
-            if ($currentUser['teamid'] == 0 && $currentUser['admin'] == 0) {
-                echo "<form action='teamController.php' method='post'>";
-                echo "<input type='hidden' name='type' value='addPlayer'>";
-                echo "<input type='hidden' name='teamID' value='{$team['id']}'>";
-                echo "<input type='hidden' name='playerID' value='{$currentUser['id']}'>";
-                echo "<input type='submit' value='Add Player: {$currentUser['username']}'>";
-                echo "</form>";
-            }
-        }
-        echo "<br>";
-    }
-    else
-    {
-        echo "You cannot edit this team!<br>";
-        echo "<a href='team-overview.php'>Go back</a>";
-    }
-}
 ?>
 <!doctype html>
 <html lang="en">
@@ -133,17 +49,115 @@ else {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit team</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Team aanpassen</title>
 </head>
-<style>
-    p {
-        line-height: 1;
-        padding: 0px;
-        margin: 0px;
-        color: #666666;
-    }
-</style>
 <body>
-
+<div class="home-header">
+    <a class="home-logo" href="index.php">
+        <h1>FIFA 17</h1>
+        <img src="img/football.jpg" alt="logo-img">
+    </a>
+    <nav>
+        <a class="return-button" href="index.php"><img src="img/house.png" alt="house-img"><p>Ga terug</p></a>
+        <?php
+        if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+            echo "<a href='logout.php'>Uitloggen</a>";
+        }
+        else {
+            echo "<a href='login.php'>Login</a>";
+            echo "<a href='register.php'>Registreer</a>";
+        }
+        ?>
+    </nav>
+</div>
+<div class="home-main-t">
+    <div class="center">
+        <div class="team-content">
+            <?php
+                if ($user['admin'] == 1) {
+                    echo "<h2>Team aanpassen: {$team['name']}</h2>";
+                    echo "<form action='teamController.php' method='post'>";
+                    echo "<input type='hidden' name='type' value='edit'>";
+                    echo "<input type='hidden' name='id' value='{$team['id']}'>";
+                    echo "<input class='l-type-text-last' type='text' id='name' name='name' value='{$team['name']}'>";
+                    echo "<input class='form-button' type='submit' value='Team aanpassen'>";
+                    echo "</form>";
+                    echo "<form action='teamController.php' method='post'>";
+                    echo "<input type='hidden' name='type' value='delete'>";
+                    echo "<input type='hidden' name='id' value='{$team['id']}'>";
+                    echo "<input class='form-button-d' type='submit' value='Verwijder team'>";
+                    echo "</form>";
+                    $players = "";
+                    $allPlayersCurrentTeam = explode(",", $team['players']);
+                    $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
+                    for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
+                    $currentUser = $allPlayersCurrentTeam[$x];
+                        foreach ($users as $key => $val) {
+                            if ($val['id'] == $currentUser) {
+                            $players = $players . $val['username'] . ", ";
+                            }
+                        }
+                    }
+                    echo "<p>Spelers: {$players}</p>";
+                    for ($i = 0; $i < $countUsers; $i++){
+                        $currentUser = $users[$i];
+                        if ($currentUser['teamid'] == 0 && $currentUser['admin'] == 0) {
+                        echo "<form action='teamController.php' method='post'>";
+                            echo "<input type='hidden' name='type' value='addPlayer'>";
+                            echo "<input type='hidden' name='teamID' value='{$team['id']}'>";
+                            echo "<input type='hidden' name='playerID' value='{$currentUser['id']}'>";
+                            echo "<input class='form-button-s' type='submit' value='Speler toevoegen: {$currentUser['username']}'>";
+                            echo "</form>";
+                        }
+                    }
+                }
+                else {
+                    if ($currentTeamCreator == $user['id']) {
+                        echo "<h2>Team aanpassen: {$team['name']}</h2>";
+                        echo "<form action='teamController.php' method='post'>";
+                        echo "<input type='hidden' name='type' value='edit'>";
+                        echo "<input type='hidden' name='id' value='{$team['id']}'>";
+                        echo "<input class='l-type-text-last' type='text' id='name' name='name' value='{$team['name']}'>";
+                        echo "<input class='form-button' type='submit' value='Team aanpassen'>";
+                        echo "</form>";
+                        $players = "";
+                        $allPlayersCurrentTeam = explode(",", $team['players']);
+                        $allPlayersCurrentTeamCount = count($allPlayersCurrentTeam);
+                        for ($x = 0; $x < $allPlayersCurrentTeamCount; $x++){
+                            $currentUser = $allPlayersCurrentTeam[$x];
+                            foreach ($users as $key => $val) {
+                                if ($val['id'] == $currentUser) {
+                                $players = $players . $val['username'] . ", ";
+                                }
+                            }
+                        }
+                        echo "<p>Spelers: {$players}</p>";
+                        for ($i = 0; $i < $countUsers; $i++){
+                            $currentUser = $users[$i];
+                            if ($currentUser['teamid'] == 0 && $currentUser['admin'] == 0) {
+                                echo "<form action='teamController.php' method='post'>";
+                                echo "<input type='hidden' name='type' value='addPlayer'>";
+                                echo "<input type='hidden' name='teamID' value='{$team['id']}'>";
+                                echo "<input type='hidden' name='playerID' value='{$currentUser['id']}'>";
+                                echo "<input class='form-button-s' type='submit' value='Voeg speler toe: {$currentUser['username']}'>";
+                                echo "</form>";
+                            }
+                        }
+                    }
+                    else {
+                        echo "<p>You cannot edit this team!</p>";
+                        echo "<a href='team-overview.php'>Go back</a>";
+                    }
+                }
+            ?>
+        </div>
+    </div>
+</div>
+<div class="home-footer">
+    <p>Telefoon: 0645871236</p>
+    <p>Adres: Terheijdenseweg 350, 4826 AA Breda</p>
+    <p>Email: radiuscollege@rocwb.nl</p>
+</div>
 </body>
 </html>
