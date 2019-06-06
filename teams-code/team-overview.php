@@ -67,12 +67,12 @@ else {
                 <h2>Alle teams:</h2>
                 <table class="teams">
                     <tr class="even-tr">
-                        <th style="width: 200px;">Team naam</th>
-                        <th style="width: 200px;">Spelers</th>
-                        <th style="width: 200px;">Maker</th>
+                        <th class='th-200'>Team naam</th>
+                        <th class='th-200'>Spelers</th>
+                        <th class='th-200'>Maker</th>
                         <?php
                             if ($id != null && $user['teamid'] == 0 && $user['admin'] == 0){
-                                echo "<th style='width: 200px;'>Deelnemen</th>";
+                                echo "<th class='th-200'>Deelnemen</th>";
                             }
                         ?>
                     </tr>

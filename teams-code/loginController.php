@@ -14,14 +14,14 @@ if (isset($_POST['email']) && !empty($_POST['email'])){
     $email = htmlentities(trim($_POST['email']));
 }
 else {
-    echo "niks ingevuld bij email";
+    header('Location: error.php?error=Er is niks ingevuld bij email');
     exit;
 }
 if (isset($_POST['password']) && !empty($_POST['password'])){
     $password = htmlentities(trim($_POST['password']));
 }
 else {
-    echo "niks ingevuld bij password";
+    header('Location: error.php?error=Er is niks ingevuld bij wachtwoord');
     exit;
 }
 
@@ -33,45 +33,39 @@ $resultpassword = $stmt->fetch(PDO::FETCH_ASSOC);
 // The following runs if the post type is register
 if ($_POST['type'] === 'register') {
     if ($resultpassword['EmailCount'] == 1){
-        echo "<p>That email is already in use!</p>";
-        echo "<a href='register.php'>Go back</a>";
+        header('Location: error.php?error=Het ingevulde email adres bestaat al');
         exit;
     }
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo '<p>Invalid email address!</p>';
-        echo '<a href="register.php">Go back</a>';
+        header('Location: error.php?error=Het ingevulde email adres is ongeldig');
         exit;
     }
     if (strlen($email) > 128){
-        echo "<p>Email is too long ( Maximal is 128 characters )</p>";
-        echo '<a href="register.php">Go back</a>';
+        header('Location: error.php?error=Het ingevulde email adres is te lang (Het maximale is 128 karakters lang)');
         exit;
     }
     if (isset($_POST['username']) && !empty($_POST['username'])){
         $username = htmlentities(trim($_POST['username']));
     }
     else {
-        echo "<p>niks ingevuld bij username</p>";
+        header('Location: error.php?error=Er is niks ingevuld bij gebruikers naam');
         exit;
     }
     if (strlen($password) < 7){
-        echo "<p>Password is too short ( Minimal is 7 characters )</p>";
-        echo '<a href="register.php">Go back</a>';
+        header('Location: error.php?error=Het ingevulde wachtwoord is te kort (Het minimale is 7 karakters lang)');
         exit;
     }
     if (!preg_match("#[A-Z]+#", $password)) {
-        echo '<p>Password needs atleast 1 capital letter</p>';
-        echo '<a href="register.php">Go back</a>';
+        header('Location: error.php?error=Het ingevulde wachtwoord moet 1 hoofdletter bevatten');
         exit;
     }
+
     if (!preg_match("#[0-9]+#", $password)) {
-        echo '<p>Password needs atleast 1 number</p>';
-        echo '<a href="register.php">Go back</a>';
+        header('Location: error.php?error=Het ingevulde wachtwoord moet 1 nummer bevatten');
         exit;
     }
     if (strlen($username) > 64){
-        echo "<p>Username is too long ( Maximal is 64 characters )</p>";
-        echo '<a href="register.php">Go back</a>';
+        header('Location: error.php?error=Het ingevulde gebruikers naam is te lang (Het maximale is 64 karakters)');
         exit;
     }
     // Retrieve all users
@@ -80,8 +74,7 @@ if ($_POST['type'] === 'register') {
     $users = $query->fetchAll(PDO::FETCH_ASSOC);
     foreach ($users as $key => $val) {
         if (strtolower($val['username']) == strtolower($username)) {
-            echo "<p>That username is already in use</p>";
-            echo '<a href="register.php">Go back</a>';
+            header('Location: error.php?error=Het ingevulde gebruikers naam bestaat al');
             exit;
         }
     }
@@ -144,14 +137,12 @@ if ( $_POST['type'] === 'login' ) {
             header('Location: loggedIn.php');
         }
         else {
-            echo 'Failed to log in! (password is incorrect)';
-            echo '<br><a href="index.php">Go back</a>';
+            header('Location: error.php?error=Kon niet inloggen (Wachtwoord is incorrect)');
             exit;
         }
     }
     else {
-        echo 'Failed to log in! (email was not found)';
-        echo '<br><a href="index.php">Go back</a>';
+        header('Location: error.php?error=Kon niet inloggen (Email is niet gevonden)');
         exit;
     }
 }

@@ -19,36 +19,19 @@ if (isset($_POST['name']) && !empty($_POST['name'])){
     $name = htmlentities(trim($_POST['name']));
 }
 else if ($_POST['type'] != 'delete' && $_POST['type'] != 'addPlayer' && $_POST['type'] != 'addPlayerSolo') {
-    echo "niks ingevuld bij name";
-    if ($_POST['type'] === 'add') {
-        echo "<form action='addTeam.php' method='post'>
-        <input type='hidden' name='type' value='add'>
-        <input type='hidden' name='id' value='<?=$id?>'>
-        <input type='submit' value='Retry'>
-        </form>";
-    }
-    if ($_POST['type'] === 'edit') {
-        echo "<br>";
-        echo "<a href='editTeam.php?id={$id}'>Retry</a>";
-    }
+    header('Location: error.php?error=Er is niks ingevuld bij naam');
     exit;
 }
 
 // If the post type is add
 if ($_POST['type'] === 'add') {
     if (strlen($name) > 64) {
-        echo "<p>Team name cannot be any longer than 64 characters";
-        echo "<br><a href='addTeam.php'>Retry</a>";
+        header('Location: error.php?error=Het ingevulde team naam is te lang (Het maximale is 64)');
         exit;
     }
     foreach ($teams as $key => $val) {
         if (strtolower($val['name']) == strtolower($name)) {
-            echo "Team bestaat al!";
-            echo "<form action='addTeam.php' method='post'>
-                <input type='hidden' name='type' value='add'>
-                <input type='hidden' name='id' value='<?=$id?>'>
-                <input type='submit' value='Retry'>
-                </form>";
+            header('Location: error.php?error=Het ingevulde team naam bestaat al');
             exit;
         }
     }
@@ -83,8 +66,7 @@ if ($_POST['type'] === 'add') {
 // If the post type is edit
 if ($_POST['type'] === 'edit') {
     if (strlen($name) > 64) {
-        echo "<p>Team name cannot be any longer than 64 characters";
-        echo "<br><a href='editTeam.php?id={$_POST['id']}'>Retry</a>";
+        header('Location: error.php?error=Het ingevulde team naam is te lang (Het maximale is 64)');
         exit;
     }
     // Retrieve all teams
@@ -96,10 +78,7 @@ if ($_POST['type'] === 'edit') {
             if ($val['id'] == htmlentities(trim($_POST['id']))) {
             }
             else {
-                echo "<p>This team already exists!</p>";
-                echo "<br>";
-                $teamId = htmlentities(trim($_POST['id']));
-                echo "<a href='editTeam.php?id={$teamId}'>Retry</a>";
+                header('Location: error.php?error=Het ingevulde team naam bestaat al');
                 exit;
             }
         }
@@ -173,8 +152,7 @@ if ($_POST['type'] === 'addPlayer') {
     foreach ($allPlayersCurrentTeam as $key => $val) {
         if ($val == $currentUser['id']) {
             $team1 = $val;
-            echo "<p>User is already in this team</p>";
-            header("Location: editTeam.php?id={$teamID}");
+            header('Location: error.php?error=De geselecteerde gebruiker zit al in het team (Het kan zijn dat er te snel werd geklikt)');
             exit;
         }
     }
@@ -225,8 +203,7 @@ if ($_POST['type'] === 'addPlayerSolo') {
     foreach ($allPlayersCurrentTeam as $key => $val) {
         if ($val == $currentUser['id']) {
             $team1 = $val;
-            echo "<p>User is already in this team</p>";
-            header("Location: team-overview.php");
+            header('Location: error.php?error=De geselecteerde gebruiker zit al in het team (Het kan zijn dat er te snel werd geklikt)');
             exit;
         }
     }

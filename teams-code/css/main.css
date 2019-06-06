@@ -358,6 +358,10 @@ body {
 /* dashboard */
 .nav-dashboard {
     display: flex;
+    flex-direction: column;
+}
+.nav-dashboard table {
+    margin-top: 20px;
 }
 .nav-dashboard a {
     font-size: 1em;
@@ -444,6 +448,32 @@ body {
 .home-main-s .form-button {
     margin-top: 20px;
     padding: 0 40px 0 40px;
+}
+.th-30 {
+    width: 30px;
+}
+.th-50 {
+    width: 50px;
+}
+.th-100 {
+    width: 100px;
+}
+.th-200 {
+    width: 200px;
+}
+.th-300 {
+    width: 300px;
+}
+ /* Score input */
+.s-type-text {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    padding: 0 10px 0 10px;
+}
+.s-type-text:focus {
+    outline: none;
 }
  /* ==========================================================================
    Helper classes

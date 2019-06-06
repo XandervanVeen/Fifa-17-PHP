@@ -17,21 +17,19 @@ if ($_POST['type'] === 'add'){
     if (isset($_POST['fieldNumber']) && !empty($_POST['fieldNumber'])){
         $fieldNumber = htmlentities(trim($_POST['fieldNumber']));
         if (!is_numeric($fieldNumber)){
-            echo "<p>Field has to be a number!</p>";
-            echo "<br><a href='addField.php'>Retry</a>";
+            header('Location: error.php?error=Het ingevulde veld moet een nummer zijn');
             exit;
         }
     }
     else {
-        echo "niks ingevuld bij fieldNumber";
+        header('Location: error.php?error=Er is niks ingevuld bij veld nummer');
         exit;
     }
     // This looks true all fields to see if it can find and item in the database
     // which already contains the field number
     foreach ($fields as $key => $val) {
         if ($val['fieldNumber'] == $fieldNumber) {
-            echo "<p>Field already exists!</p>";
-            echo "<br><a href='addField.php'>Retry</a>";
+            header('Location: error.php?error=Het veld bestaat al');
             exit;
         }
     }

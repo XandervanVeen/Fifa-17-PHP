@@ -15,16 +15,14 @@ if ($_POST['type'] === 'add'){
         $refereeName = htmlentities(trim($_POST['refereeName']));
     }
     else {
-        echo "<p>niks ingevuld bij referee name</p>";
-        echo "<br><a href='addReferee.php'>Retry</a>";
+        header('Location: error.php?error=Er is niks ingevuld bij scheidsrechter');
         exit;
     }
     // This looks true all referees to see if it can find and item in the database
     // which already contains the referee name
     foreach ($referees as $key => $val) {
         if (strtolower($val['name']) == strtolower($refereeName)) {
-            echo "<p>That name is already in use!</p>";
-            echo "<br><a href='addReferee.php'>Retry</a>";
+            header('Location: error.php?error=Het ingevulde naam bestaat al');
             exit;
         }
     }

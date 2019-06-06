@@ -59,19 +59,19 @@ if (empty($schedule)){
                 <h2>Schema</h2>
                 <table class="schedule">
                     <tr class="even-tr">
-                        <th style="width: 200px;">Team 1</th>
-                        <th style="width: 200px;">Team 2</th>
-                        <th style="width: 100px;">Wedstrijd duur</th>
-                        <th style="width: 100px;">Pauze duur</th>
-                        <th style="width: 100px;">Rust duur</th>
-                        <th style="width: 50px;">Veld</th>
-                        <th style="width: 50px;">Referee</th>
-                        <th style="width: 100px;">Team 1 score</th>
-                        <th style="width: 100px;">Team 2 score</th>
+                        <th class="th-200">Team 1</th>
+                        <th class="th-200">Team 2</th>
+                        <th class="th-100">Wedstrijd duur</th>
+                        <th class="th-100">Pauze duur</th>
+                        <th class="th-300">Rust duur</th>
+                        <th class="th-50">Veld</th>
+                        <th class="th-200">Referee</th>
+                        <th class="th-100">Team 1 score</th>
+                        <th class="th-100">Team 2 score</th>
                         <?php
                         if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                             if ($user['admin'] == 1) {
-                                echo "<th style='width: 200px;'>Eindscore</th>";
+                                echo "<th class='th-200'>Eindscore</th>";
                             }
                         }
                         ?>

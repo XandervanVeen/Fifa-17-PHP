@@ -11,8 +11,7 @@ $query = $db->query($sql);
 $referees = $query->fetchAll(PDO::FETCH_ASSOC);
 $refereeCount = count($referees);
 if ($refereeCount == 0){
-    echo "<p>Er is nog geen scheidsrechter toegevoegd!</p>";
-    echo "<br><a href='addReferee.php'>Scheidsrechter toevoegen</a>";
+    header('Location: error.php?error=Er is nog geen scheidsrechter toegevoegd');
     exit;
 }
 else {
@@ -41,44 +40,41 @@ else {
 }
 if ($_POST['type'] === 'generate'){
     if (count($teams) <= 1) {
-        echo "There are not enough teams to generate a schedule";
+        header('Location: error.php?error=Er zijn niet genoeg teams om een schema te maken');
         exit;
     }
     if (isset($_POST['matchTime']) && !empty($_POST['matchTime'])){
         $matchTime = htmlentities(trim($_POST['matchTime']));
         if (!is_numeric($matchTime)){
-            echo "<p>Match time has to be a number!</p>";
-            echo "<br><a href='preSchedule.php'>Retry</a>";
+            header('Location: error.php?error=Het ingevulde wedstrijd tijd moet een nummer zijn');
             exit;
         }
     }
     else {
-        echo "niks ingevuld bij matchTime";
+        header('Location: error.php?error=Er is niks ingevuld bij wedstrijd tijd');
         exit;
     }
     if (isset($_POST['breakTime']) && !empty($_POST['breakTime'])){
         $breakTime = htmlentities(trim($_POST['breakTime']));
         if (!is_numeric($breakTime)){
-            echo "<p>Break time has to be a number!</p>";
-            echo "<br><a href='preSchedule.php'>Retry</a>";
+            header('Location: error.php?error=Het ingevulde pauze tijd moet een nummer zijn');
             exit;
         }
     }
     else {
-        echo "niks ingevuld bij breakTime";
+        header('Location: error.php?error=Er is niks ingevuld bij pauze tijd');
         exit;
     }
     if (isset($_POST['restTimeCheck']) && !empty($_POST['restTimeCheck'])){
         if (isset($_POST['restTime']) && !empty($_POST['restTime'])) {
             $restTime = htmlentities(trim($_POST['restTime']));
             if (!is_numeric($restTime)){
-                echo "<p>Rest time has to be a number!</p>";
-                echo "<br><a href='preSchedule.php'>Retry</a>";
+                header('Location: error.php?error=Het ingevulde rust tijd moet een nummer zijn');
                 exit;
             }
         }
         else {
-            echo "niks ingevuld bij restTime";
+            header('Location: error.php?error=Er is niks ingevuld bij rust tijd');
             exit;
         }
     }
@@ -148,13 +144,11 @@ if ($_POST['type'] === 'scoreInput'){
         $team2score = 0;
     }
     if (!is_numeric($team1score) || !is_numeric($team2score)){
-        echo "<p>Team score has to be a number!</p>";
-        echo "<br><a href='scoreInput.php?id=$id'>Retry</a>";
+        header('Location: error.php?error=Het ingevulde team score moet een nummer zijn');
         exit;
     }
     if ($team1score > 99 || $team2score > 99){
-        echo "<p>Team score cannot be higher than 99!</p>";
-        echo "<br><a href='scoreInput.php?id=$id'>Retry</a>";
+        header('Location: error.php?error=Het ingevulde team score mag niet hoger zijn dan 99');
         exit;
     }
     $sql = "UPDATE schedule SET 
@@ -167,7 +161,7 @@ if ($_POST['type'] === 'scoreInput'){
         ':team2score'  => $team2score,
         ':id'          => $id
     ]);
-//    Begin
+
     $sql = "SELECT * FROM schedule WHERE id = :id";
     $prepare = $db->prepare($sql);
     $prepare->execute([
@@ -248,12 +242,6 @@ if ($_POST['type'] === 'scoreInput'){
             ':id'           => $id2
         ]);
     }
-
-//    Eind
-
-
-
-
     header('Location: schedule-overview.php');
 }
 if ($_POST['type'] === 'delete'){
