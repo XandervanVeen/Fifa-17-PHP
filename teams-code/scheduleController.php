@@ -167,7 +167,7 @@ if ($_POST['type'] === 'scoreInput'){
         ':team2score'  => $team2score,
         ':id'          => $id
     ]);
-
+//    Begin
     $sql = "SELECT * FROM schedule WHERE id = :id";
     $prepare = $db->prepare($sql);
     $prepare->execute([
@@ -248,6 +248,12 @@ if ($_POST['type'] === 'scoreInput'){
             ':id'           => $id2
         ]);
     }
+
+//    Eind
+
+
+
+
     header('Location: schedule-overview.php');
 }
 if ($_POST['type'] === 'delete'){

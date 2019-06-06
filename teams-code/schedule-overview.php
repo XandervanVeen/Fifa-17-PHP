@@ -95,7 +95,12 @@ if (empty($schedule)){
             echo "<th>{$schedule[$i]['team2score']}</th>";
             if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                 if ($user['admin'] == 1){
-                    echo "<th><a href='scoreInput.php?id={$schedule[$i]['id']}'>Eindstand invullen</a></th>";
+                    if($schedule[$i]['hasBeenEdited'] == 0){
+                        echo "<th><a href='scoreInput.php?id={$schedule[$i]['id']}'>Eindstand invullen</a></th>";
+                    }
+                    else{
+                        echo "<th>Wedstrijd gespeeld</th>";
+                    }
                 }
             }
             echo "</tr>";
