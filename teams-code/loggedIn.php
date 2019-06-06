@@ -21,6 +21,10 @@ $id = $user['id'];
 $sql = "SELECT * FROM schedule";
 $query = $db->query($sql);
 $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = "SELECT * FROM teams";
+$query = $db->query($sql);
+$teams = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!doctype html>
 <html lang="en">
@@ -54,6 +58,17 @@ $schedule = $query->fetchAll(PDO::FETCH_ASSOC);
         <div class="center">
             <div class="dashboard-content">
                 <h2>Dashboard:</h2>
+              <?php
+              function cmp($a, $b){
+                return strcmp($b['points'], $a['points']);
+              }
+              usort($teams, "cmp");
+              array_reverse($teams);
+
+             for($i = 0; $i < count($teams); $i++){
+               echo $teams[$i]['name'];
+             }
+              ?>
                 <div class="nav-dashboard">
                     <a href="team-overview.php">Alle teams</a>
                     <?php
