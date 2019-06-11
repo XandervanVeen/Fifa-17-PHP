@@ -1,9 +1,12 @@
 <?php
+
 require 'config.php';
+//require 'icon.html';
 session_start();
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header('Location: loggedIn.php');
 }
+
 $sql = "SELECT * FROM schedule";
 $query = $db->query($sql);
 $schedule = $query->fetchAll(PDO::FETCH_ASSOC);

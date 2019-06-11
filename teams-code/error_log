@@ -1,0 +1,618 @@
+[07-Jun-2019 06:56:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 06:56:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 06:56:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 06:56:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 06:56:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 06:59:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:07:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/team-overview.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:07:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/team-overview.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:26:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:26:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:27:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:27:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:27:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:27:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:27:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:28:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:29:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(2): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:45:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 07:50:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/kayleboersen/public_html/config.php:10
+Stack trace:
+#0 /home/kayleboersen/public_html/config.php(10): PDO->__construct('mysql:host=loca...', 'root', 'appelflap123')
+#1 /home/kayleboersen/public_html/index.php(4): require('/home/kayleboer...')
+#2 {main}
+  thrown in /home/kayleboersen/public_html/config.php on line 10
+[07-Jun-2019 08:12:05 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:06 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:34 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:12:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 08:12:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 08:13:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 08:13:19 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:13:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:13:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:13:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/addTeam.php on line 4
+[07-Jun-2019 08:13:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/addTeam.php on line 25
+[07-Jun-2019 08:13:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/team-overview.php on line 4
+[07-Jun-2019 08:13:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:14:04 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/team-overview.php on line 4
+[07-Jun-2019 08:15:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 08:16:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:16:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:16:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:16:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:17:46 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/team-overview.php on line 4
+[07-Jun-2019 08:17:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:18:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:18:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:23:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:23:56 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:23:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:26:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:26:29 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:26:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:26:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:26:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:26:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:26:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:26:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:27:01 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/addTeam.php on line 4
+[07-Jun-2019 08:27:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/addTeam.php on line 25
+[07-Jun-2019 08:27:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:27:15 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:27:18 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/team-overview.php on line 4
+[07-Jun-2019 08:27:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:27:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:12 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:28:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:28:20 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:28:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:28:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:28:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:28:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:49 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:54 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:54 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:54 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:29:55 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:30:04 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:30:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:31:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:31:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:31:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:31:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:31:29 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:31:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:31:30 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:31:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:31:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:31:33 UTC] PHP Warning:  include(includes/header.php): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 8
+[07-Jun-2019 08:31:33 UTC] PHP Warning:  include(includes/header.php): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 8
+[07-Jun-2019 08:31:33 UTC] PHP Warning:  include(): Failed opening 'includes/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 8
+[07-Jun-2019 08:31:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:31:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:33:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:33:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 08:33:20 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:33:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:33:27 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:34:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 08:34:58 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 08:34:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 08:35:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/addTeam.php on line 4
+[07-Jun-2019 08:35:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/addTeam.php on line 25
+[07-Jun-2019 09:00:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 10:22:16 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 17:39:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:01:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:01:49 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:02:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:02:56 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:02:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 18:03:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 18:05:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:05:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 18:05:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 18:05:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:05:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 18:06:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:13:13 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:13:14 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:13:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:13:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 18:13:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:13:49 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 18:14:02 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:14:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 18:14:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:14:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 18:14:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 18:14:39 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 18:15:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/register.php on line 4
+[07-Jun-2019 18:15:27 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:15:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:15:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 18:16:06 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:16:23 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:16:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 18:16:57 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:16:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 18:21:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 4
+[07-Jun-2019 18:23:11 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:23:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 11
+[07-Jun-2019 18:23:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/index.php on line 6
+[07-Jun-2019 18:23:17 UTC] PHP Notice:  Undefined variable: _SESSION in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:25:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/login.php on line 5
+[07-Jun-2019 18:25:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/loggedIn.php on line 7
+[07-Jun-2019 18:25:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/loggedIn.php on line 13
+[07-Jun-2019 18:25:41 UTC] PHP Notice:  Undefined variable: _SESSION in /home/kayleboersen/public_html/loggedIn.php on line 18
+[07-Jun-2019 18:25:41 UTC] PHP Notice:  Undefined variable: _SESSION in /home/kayleboersen/public_html/loggedIn.php on line 63
+[07-Jun-2019 18:27:15 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:27:15 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:27:15 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/loggedIn.php on line 5
+[07-Jun-2019 18:28:09 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:28:09 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:28:09 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:46 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:46 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:46 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:47 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:47 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:47 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:48 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:48 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:48 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:48 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:48 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:48 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:52 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:52 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:29:52 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/index.php on line 5
+[07-Jun-2019 18:30:55 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:31:00 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:00 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:00 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:03 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:03 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:03 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:04 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:06 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:10 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:31:12 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:31:13 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:31:14 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:31:14 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:31:15 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:15 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:15 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:46 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:46 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:46 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:47 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:47 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:47 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:47 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:47 UTC] PHP Warning:  require(icon.html): failed to open stream: No such file or directory in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:31:47 UTC] PHP Fatal error:  require(): Failed opening required 'icon.html' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/login.php on line 3
+[07-Jun-2019 18:32:29 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[07-Jun-2019 18:33:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/addTeam.php on line 4
+[07-Jun-2019 18:33:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kayleboersen/public_html/icon.html:1) in /home/kayleboersen/public_html/addTeam.php on line 25
+[07-Jun-2019 18:33:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/team-overview.php on line 4
+[08-Jun-2019 09:00:03 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[08-Jun-2019 11:47:37 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[08-Jun-2019 11:47:38 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[08-Jun-2019 14:54:22 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[09-Jun-2019 09:00:04 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[09-Jun-2019 12:22:27 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[09-Jun-2019 12:22:28 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[10-Jun-2019 12:48:35 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[10-Jun-2019 19:28:17 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[10-Jun-2019 19:28:17 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[10-Jun-2019 20:15:56 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[10-Jun-2019 20:15:57 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:32:01 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:32:01 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:32:14 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kayleboersen/public_html/team-overview.php on line 4
+[11-Jun-2019 06:41:42 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:41:42 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:42:49 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:42:51 UTC] PHP Notice:  Undefined index: loggedin in /home/kayleboersen/public_html/index.php on line 48
+[11-Jun-2019 06:47:37 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/kayleboersen/public_html/scheduleController.php on line 81
+[11-Jun-2019 06:47:43 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/kayleboersen/public_html/scheduleController.php on line 81
+[11-Jun-2019 06:48:06 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/kayleboersen/public_html/scheduleController.php on line 81
+[11-Jun-2019 06:48:14 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/kayleboersen/public_html/scheduleController.php on line 81
+[11-Jun-2019 06:48:38 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/kayleboersen/public_html/scheduleController.php on line 83
+[11-Jun-2019 06:56:53 UTC] PHP Warning:  require(style.php): failed to open stream: No such file or directory in /home/kayleboersen/public_html/refereeController.php on line 3
+[11-Jun-2019 06:56:53 UTC] PHP Warning:  require(style.php): failed to open stream: No such file or directory in /home/kayleboersen/public_html/refereeController.php on line 3
+[11-Jun-2019 06:56:53 UTC] PHP Fatal error:  require(): Failed opening required 'style.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/refereeController.php on line 3
+[11-Jun-2019 06:57:05 UTC] PHP Warning:  require(style.php): failed to open stream: No such file or directory in /home/kayleboersen/public_html/refereeController.php on line 3
+[11-Jun-2019 06:57:05 UTC] PHP Warning:  require(style.php): failed to open stream: No such file or directory in /home/kayleboersen/public_html/refereeController.php on line 3
+[11-Jun-2019 06:57:05 UTC] PHP Fatal error:  require(): Failed opening required 'style.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kayleboersen/public_html/refereeController.php on line 3

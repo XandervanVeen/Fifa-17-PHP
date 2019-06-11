@@ -1,7 +1,7 @@
 <?php
 // Makes sure we have all the data needed to connect to the data base
 require 'config.php';
-require 'style.php';
+//require 'icon.html';
 // This checks if the user came to this page using a post request so that user cannot just
 // visit this website
 if ( $_SERVER['REQUEST_METHOD'] != 'POST' ) {

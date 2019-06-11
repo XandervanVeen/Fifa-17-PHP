@@ -1,6 +1,7 @@
 <?php
+
 require 'config.php';
-require 'style.php';
+// require 'icon.html';
 // Initialize the session
 session_start();
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'icon.html';
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header('Location: loggedIn.php');
 }

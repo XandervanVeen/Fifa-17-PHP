@@ -1,6 +1,8 @@
 <?php
 require 'config.php';
-require 'style.php';
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+//require 'style.php';
 session_start();
 if ( $_SERVER['REQUEST_METHOD'] != 'POST' ) {
     header('Location: index.php');
@@ -65,8 +67,8 @@ if ($_POST['type'] === 'generate'){
         header('Location: error.php?error=Er is niks ingevuld bij pauze tijd');
         exit;
     }
-    if (isset($_POST['restTimeCheck']) && !empty($_POST['restTimeCheck'])){
-        if (isset($_POST['restTime']) && !empty($_POST['restTime'])) {
+   
+if (isset($_POST['restTime']) && !empty($_POST['restTime'])) {
             $restTime = htmlentities(trim($_POST['restTime']));
             if (!is_numeric($restTime)){
                 header('Location: error.php?error=Het ingevulde rust tijd moet een nummer zijn');
@@ -74,13 +76,8 @@ if ($_POST['type'] === 'generate'){
             }
         }
         else {
-            header('Location: error.php?error=Er is niks ingevuld bij rust tijd');
-            exit;
+            $restTime = 0;
         }
-    }
-    else {
-        $restTime = 0;
-    }
     // Retrieve all teams
     $sql = "SELECT * FROM teams";
     $query = $db->query($sql);

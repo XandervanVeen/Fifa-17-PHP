@@ -1,5 +1,6 @@
 <?php
 session_start();
+//require 'icon.html';
 if (isset($_GET["error"]) && $_GET["error"] === true){
     header("Location: index.php");
 }

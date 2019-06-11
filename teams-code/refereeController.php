@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-require  'style.php';
+//require  'style.php';
 if ( $_SERVER['REQUEST_METHOD'] != 'POST' ) {
     header('Location: index.php');
     exit;

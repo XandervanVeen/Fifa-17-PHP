@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-require 'style.php';
+require 'icon.html';
 session_start();
 // Retrieve all teams
 $sql = "SELECT * FROM teams";
