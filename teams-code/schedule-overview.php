@@ -137,7 +137,7 @@ if (empty($schedule)){
                     if ($user['admin'] == 1){
                         echo "<form action='scheduleController.php' method='post'>";
                         echo "<input type='hidden' name='type' value='delete'>";
-                        echo "<input class='form-button' type='submit' value='Delete schedule'>";
+                        echo "<input class='form-button' type='submit' value='Verwijder schema'>";
                         echo "</form>";
                     }
                 }
